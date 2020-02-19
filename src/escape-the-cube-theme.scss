@@ -1,0 +1,44 @@
+// Custom Theming for Angular Material
+// For Escape the cube application
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Include this only once in your app
+@include mat-core();
+
+$etc-theme-primary: mat-palette($mat-amber);
+$etc-theme-accent: mat-palette($mat-teal);
+$etc-theme-warn: mat-palette($mat-red);
+
+$etc-theme: mat-light-theme(
+  $etc-theme-primary,
+  $etc-theme-accent,
+  $etc-theme-warn
+);
+
+// Main theme
+@include angular-material-theme($etc-theme);
+
+// Alternate theme
+.etc-alternate-theme {
+  $alternate-primary: mat-palette($mat-indigo);
+  $alternate-accent: mat-palette($mat-yellow, 600);
+  $alternate-warn: mat-palette($mat-deep-orange, 300);
+
+  $alternate-theme: mat-light-theme(
+    $alternate-primary,
+    $alternate-accent,
+    $alternate-warn
+  );
+
+  @include angular-material-theme($alternate-theme);
+}
+
+// Typographie
+
+// Define a custom typography config that overrides the font-family
+$etc-typography: mat-typography-config(
+  $font-family: 'Special Elite, cursive',
+);
+
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($etc-typography);

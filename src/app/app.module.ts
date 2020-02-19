@@ -8,6 +8,9 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { OverlayContainer } from '@angular/cdk/overlay';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -28,8 +31,14 @@ export function HttpLoaderFactory(http: HttpClient) {
         deps: [HttpClient],
       },
     }),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class EscapeTheCubeAppModule {
+  constructor(overlayContainer: OverlayContainer) {
+    // To force apply the theme to overlay elements
+    overlayContainer.getContainerElement().classList.add('etc-theme');
+  }
+}
