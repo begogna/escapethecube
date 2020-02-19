@@ -11,6 +11,7 @@ import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { OverlayContainer } from '@angular/cdk/overlay';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -32,6 +33,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
     }),
     BrowserAnimationsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

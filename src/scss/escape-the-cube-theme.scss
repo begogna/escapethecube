@@ -5,9 +5,9 @@
 // Include this only once in your app
 @include mat-core();
 
-$etc-theme-primary: mat-palette($mat-amber);
-$etc-theme-accent: mat-palette($mat-teal);
-$etc-theme-warn: mat-palette($mat-red);
+$etc-theme-primary: mat-palette($mat-yellow, 700);
+$etc-theme-accent: mat-palette($mat-indigo);
+$etc-theme-warn: mat-palette($mat-deep-orange, 300);
 
 $etc-theme: mat-light-theme(
   $etc-theme-primary,
@@ -20,17 +20,17 @@ $etc-theme: mat-light-theme(
 
 // Alternate theme
 .etc-alternate-theme {
-  $alternate-primary: mat-palette($mat-indigo);
-  $alternate-accent: mat-palette($mat-yellow, 600);
-  $alternate-warn: mat-palette($mat-deep-orange, 300);
+  $etc-alternate-primary: mat-palette($mat-amber);
+  $etc-alternate-accent: mat-palette($mat-teal);
+  $etc-alternate-warn: mat-palette($mat-red);
 
-  $alternate-theme: mat-light-theme(
-    $alternate-primary,
-    $alternate-accent,
-    $alternate-warn
+  $etc-alternate-theme: mat-light-theme(
+    $etc-alternate-primary,
+    $etc-alternate-accent,
+    $etc-alternate-warn
   );
 
-  @include angular-material-theme($alternate-theme);
+  @include angular-material-theme($etc-alternate-theme);
 }
 
 // Typographie
