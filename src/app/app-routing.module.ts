@@ -4,6 +4,7 @@ import { CreatorComponent } from './features/creator/creator.component';
 import { ConceptComponent } from './features/concept/concept.component';
 import { HomeComponent } from './features/home/home.component';
 import { BookingComponent } from './features/booking/booking.component';
+import { EscapeComponent } from './features/escape/escape.component';
 
 const etcRoutes: Routes = [
   // { path: '**', redirectTo: '/creator', pathMatch: 'full' },
@@ -12,6 +13,7 @@ const etcRoutes: Routes = [
   { path: 'creator', component: CreatorComponent },
   { path: 'concept', component: ConceptComponent },
   { path: 'booking', component: BookingComponent },
+  { path: 'escape', component: EscapeComponent },
 ];
 
 @NgModule({

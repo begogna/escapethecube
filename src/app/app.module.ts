@@ -17,6 +17,7 @@ import { CreatorComponent } from './features/creator/creator.component';
 import { ConceptComponent } from './features/concept/concept.component';
 import { HomeComponent } from './features/home/home.component';
 import { BookingComponent } from './features/booking/booking.component';
+import { EscapeComponent } from './features/escape/escape.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -30,6 +31,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     CreatorComponent,
     ConceptComponent,
     BookingComponent,
+    EscapeComponent,
   ],
   imports: [
     EscapeTheCubeAppRoutingModule,

@@ -1,0 +1,12 @@
+// TODO use same classes shared with creator ?
+
+.booking {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.booking-card {
+  max-width: 400px;
+  margin: 10px;
+}
