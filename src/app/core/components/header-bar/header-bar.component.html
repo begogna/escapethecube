@@ -7,16 +7,19 @@
     <!-- Menu -->
     <!-- TODO use mat-icon with fontSet fontawesome or fa-icon ?? -->
     <!-- <mat-icon fontSet="fa" fontIcon="fa-home"></mat-icon> -->
-    <fa-icon [icon]="homeIcon"></fa-icon>
+
+    <a class="icon-style" routerLink="/home"
+      ><fa-icon [icon]="homeIcon"></fa-icon
+    ></a>
 
     <button mat-button [matMenuTriggerFor]="concept">The concept</button>
     <mat-menu #concept="matMenu">
-      <button mat-menu-item>What is this ?</button>
+      <a mat-button routerLink="/concept">What is this ?</a>
       <button mat-menu-item>Why should I play ?</button>
       <button mat-menu-item>Escape room</button>
     </mat-menu>
 
-    <button mat-button>The creator</button>
-    <button mat-button>Book and play</button>
+    <a mat-button routerLink="/creator">The creator</a>
+    <a mat-button routerLink="/booking">Book and play</a>
   </mat-toolbar-row>
 </mat-toolbar>

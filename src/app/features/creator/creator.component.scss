@@ -1,0 +1,17 @@
+// TODO use same classes shared with creator ?
+
+.creator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.creator-card {
+  max-width: 400px;
+  margin: 10px;
+}
+
+.creator-header-image {
+  background-image: url('/assets/img/creator.webp');
+  background-size: cover;
+}

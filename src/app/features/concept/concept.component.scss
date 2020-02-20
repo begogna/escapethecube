@@ -1,0 +1,12 @@
+// TODO use same classes shared with creator ?
+
+.concept {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.concept-card {
+  max-width: 400px;
+  margin: 10px;
+}

@@ -12,6 +12,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { EscapeTheCubeAppRoutingModule } from './app-routing.module';
+import { CreatorComponent } from './features/creator/creator.component';
+import { ConceptComponent } from './features/concept/concept.component';
+import { HomeComponent } from './features/home/home.component';
+import { BookingComponent } from './features/booking/booking.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -19,8 +24,15 @@ export function HttpLoaderFactory(http: HttpClient) {
 }
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    CreatorComponent,
+    ConceptComponent,
+    BookingComponent,
+  ],
   imports: [
+    EscapeTheCubeAppRoutingModule,
     BrowserModule,
     CoreModule,
     SharedModule,
