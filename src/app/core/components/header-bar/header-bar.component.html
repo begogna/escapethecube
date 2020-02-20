@@ -1,9 +1,17 @@
 <mat-toolbar color="primary">
   <!-- Title -->
-  <mat-toolbar-row>
+  <mat-toolbar-row class="align_right">
+    <button mat-button (click)="useLanguage('en')">
+      <mat-icon svgIcon="us_flag"></mat-icon>
+    </button>
+    <button mat-button (click)="useLanguage('es')">
+      <mat-icon svgIcon="spain_flag"></mat-icon>
+    </button>
+  </mat-toolbar-row>
+  <mat-toolbar-row class="align_center">
     <h2>{{ 'ETC_title' | translate | uppercase }}</h2>
   </mat-toolbar-row>
-  <mat-toolbar-row>
+  <mat-toolbar-row class="align_center">
     <!-- Menu -->
     <!-- TODO use mat-icon with fontSet fontawesome or fa-icon ?? -->
     <!-- <mat-icon fontSet="fa" fontIcon="fa-home"></mat-icon> -->

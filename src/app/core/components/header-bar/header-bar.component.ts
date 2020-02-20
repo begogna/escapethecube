@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'etc-header-bar',
@@ -8,7 +9,11 @@ import { faHome } from '@fortawesome/free-solid-svg-icons';
 })
 export class HeaderBarComponent implements OnInit {
   public homeIcon = faHome;
-  constructor() {}
+  constructor(private translate: TranslateService) {}
 
   ngOnInit() {}
+
+  useLanguage(language: string) {
+    this.translate.use(language);
+  }
 }
