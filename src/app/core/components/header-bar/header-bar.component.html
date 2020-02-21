@@ -1,27 +1,27 @@
-<!-- <mat-toolbar color="primary">
-  <mat-toolbar-row class="align_right">
-    <button mat-button (click)="useLanguage('en')">
-      <mat-icon svgIcon="us_flag"></mat-icon>
+<mat-toolbar color="primary">
+  <div fxHide.gt-xs>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>
+        menu
+      </mat-icon>
     </button>
-    <button mat-button (click)="useLanguage('es')">
-      <mat-icon svgIcon="spain_flag"></mat-icon>
-    </button>
-  </mat-toolbar-row>
-  <mat-toolbar-row class="align_center">
-    <h2>{{ 'ETC_title' | translate | uppercase }}</h2>
-  </mat-toolbar-row>
-  <mat-toolbar-row class="align_center">
-    <a class="icon-style" routerLink="/home"><fa-icon [icon]="homeIcon"></fa-icon></a>
-
-    <button color="accent" mat-button [matMenuTriggerFor]="concept">
-      The concept
-    </button>
-    <mat-menu #concept="matMenu">
-      <a color="accent" mat-menu-item routerLink="/concept">What is this ?</a>
-      <a color="accent" mat-menu-item routerLink="/escape">Escape room</a>
-    </mat-menu>
-
-    <a mat-button color="accent" routerLink="/creator">The creator</a>
-    <a mat-button color="accent" routerLink="/booking">Book and play</a>
-  </mat-toolbar-row>
-</mat-toolbar> -->
+  </div>
+  <div>
+    <a routerLink="/">
+      LOGO
+    </a>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+    <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+      <li>
+        <a routerLink="/booking">Booking</a>
+      </li>
+      <li>
+        <a routerLink="/creator">Creator</a>
+      </li>
+      <li>
+        <a routerLink="/concept">Concept</a>
+      </li>
+    </ul>
+  </div>
+</mat-toolbar>
