@@ -18,7 +18,6 @@ import { ConceptComponent } from './features/concept/concept.component';
 import { HomeComponent } from './features/home/home.component';
 import { BookingComponent } from './features/booking/booking.component';
 import { EscapeComponent } from './features/escape/escape.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -28,7 +27,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [AppComponent, HomeComponent, CreatorComponent, ConceptComponent, BookingComponent, EscapeComponent],
   imports: [
-    FlexLayoutModule,
     EscapeTheCubeAppRoutingModule,
     BrowserModule,
     CoreModule,
