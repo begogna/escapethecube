@@ -19,7 +19,7 @@ export class AppComponent {
     translate.use('es');
 
     // Register custom icons from images
-    this.matIconRegistry.addSvgIcon('spain_flag', this.domSanitizer.bypassSecurityTrustResourceUrl('assets/img/spain-flag.svg'));
-    this.matIconRegistry.addSvgIcon('us_flag', this.domSanitizer.bypassSecurityTrustResourceUrl('assets/img/us-flag.svg'));
+    this.matIconRegistry.addSvgIcon('spain_flag', this.domSanitizer.bypassSecurityTrustResourceUrl('assets/images/spain-flag.svg'));
+    this.matIconRegistry.addSvgIcon('us_flag', this.domSanitizer.bypassSecurityTrustResourceUrl('assets/images/us-flag.svg'));
   }
 }
