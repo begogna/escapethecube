@@ -1,7 +1,38 @@
 <mat-nav-list>
   <a mat-list-item routerLink="/booking" (click)="onClose()">
-    <mat-icon>calendar_today</mat-icon><span class="nav-caption">Book and play</span>
+    <mat-icon>calendar_today</mat-icon><span class="nav-caption">{{ 'BOOKING.BOOK' | translate }}</span>
   </a>
-  <a mat-list-item routerLink="/creator" (click)="onClose()"> <mat-icon>face</mat-icon><span class="nav-caption">The creator</span></a>
-  <a mat-list-item routerLink="/concept" (click)="onClose()"><mat-icon>extension</mat-icon><span class="nav-caption">The concept</span></a>
+  <a mat-list-item routerLink="/creator" (click)="onClose()">
+    <mat-icon>face</mat-icon><span class="nav-caption">{{ 'CREATOR' | translate }}</span></a
+  >
+  <a mat-list-item routerLink="/concept" (click)="onClose()"
+    ><mat-icon>extension</mat-icon> <span class="nav-caption">{{ 'CONCEPT' | translate }}</span></a
+  >
+  <mat-divider></mat-divider>
+  <!-- Languages with flag icons -->
+  <!-- <mat-list-item>
+    <a (click)="useLanguage('en')">
+      <mat-icon svgIcon="us_flag"></mat-icon>
+    </a>
+    <a (click)="useLanguage('es')">
+      <mat-icon svgIcon="es_flag"></mat-icon>
+    </a>
+  </mat-list-item> -->
+</mat-nav-list>
+
+<mat-nav-list>
+  <!-- Languages with text -->
+  <div class="languages">
+    <div>
+      <a (click)="useLanguage('en')">
+        EN
+      </a>
+    </div>
+    <mat-divider [vertical]="true"></mat-divider>
+    <div>
+      <a (click)="useLanguage('es')">
+        ES
+      </a>
+    </div>
+  </div>
 </mat-nav-list>

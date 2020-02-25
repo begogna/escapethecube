@@ -5,30 +5,29 @@
       <mat-card-subtitle>How ?</mat-card-subtitle>
     </mat-card-header> -->
     <mat-card-content>
-      Send me an email to ines1691@gmail.com answering the next steps and I will confirm you the availability
-
+      {{ 'BOOKING.EMAIL' | translate }}
+      (ines1691@gmail.com)
       <mat-list>
-        <mat-list-item>WHERE</mat-list-item>
+        <mat-list-item>{{ 'WHERE' | translate | uppercase }}</mat-list-item>
         <p>
-          I come to you. I can deliver the box to your home. If it is an outdoor space you have to make sure that you keep all the elements
-          safe and nothing flies away or it's bitten by your dog.
+          {{ 'BOOKING.WHERE' | translate }}
         </p>
 
         <mat-divider></mat-divider>
 
-        <mat-list-item>WHEN</mat-list-item>
+        <mat-list-item>{{ 'WHEN' | translate | uppercase }}</mat-list-item>
         <p>
-          Let me know at least 3 hours before you want to play and I would try my best to find you the availability.
+          {{ 'BOOKING.WHEN' | translate | uppercase }}
         </p>
         <mat-divider></mat-divider>
-        <mat-list-item>HOW MUCH</mat-list-item>
+        <mat-list-item>{{ 'HOW_MUCH' | translate }}</mat-list-item>
         <p>
-          Monday to Thursday $40 per box. Friday to Sunday $50 per box. Plus a bond in case of misuse.
+          {{ 'BOOKING.HOW_MUCH' | translate }}
         </p>
         <mat-divider></mat-divider>
 
-        <mat-list-item>HOW MANY</mat-list-item>
-        <p>It is recommended for 2 to 4 people. Tell me how many people are going to play.</p>
+        <mat-list-item>{{ 'HOW_MANY' | translate | uppercase }}</mat-list-item>
+        <p>{{ 'BOOKING.HOW_MANY' | translate }}</p>
       </mat-list>
     </mat-card-content>
   </mat-card>

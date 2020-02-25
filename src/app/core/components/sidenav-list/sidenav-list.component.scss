@@ -11,3 +11,13 @@ a:active {
   display: inline-block;
   padding-left: 6px;
 }
+
+.languages {
+  display: flex;
+  margin-left: 16px;
+  margin-top: 16px;
+  mat-divider {
+    height: 20px;
+    margin: 0 10px;
+  }
+}

@@ -1,4 +1,5 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'etc-sidenav-list',
@@ -7,11 +8,16 @@ import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class SidenavListComponent implements OnInit {
   @Output() closeSidenav = new EventEmitter<void>();
-  constructor() {}
+  constructor(private translate: TranslateService) {}
 
   ngOnInit(): void {}
 
   onClose() {
     this.closeSidenav.emit();
+  }
+
+  useLanguage(language: string) {
+    this.translate.use(language);
+    this.onClose();
   }
 }

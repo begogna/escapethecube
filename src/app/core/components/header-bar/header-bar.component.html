@@ -12,24 +12,23 @@
     </a>
   </div>
   <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
-    <ul fxLayout fxLayoutGap="10px" class="navigation-items">
+    <ul fxLayout fxLayoutGap="20px" fxLayoutAlign="flex-end flex-end" class="navigation-items">
       <li>
-        <a routerLink="/booking">Booking</a>
+        <a routerLink="/booking">{{ 'BOOKING.BOOK' | translate }}</a>
       </li>
       <li>
-        <a routerLink="/creator">Creator</a>
+        <a routerLink="/creator">{{ 'CREATOR' | translate }}</a>
       </li>
       <li>
-        <a routerLink="/concept">Concept</a>
+        <a routerLink="/concept">{{ 'CONCEPT' | translate }}</a>
       </li>
       <li>
-        <button mat-button (click)="useLanguage('en')">
+        <button mat-icon-button (click)="useLanguage('en')">
           <mat-icon svgIcon="us_flag"></mat-icon>
         </button>
-      </li>
-      <li>
-        <button mat-button (click)="useLanguage('es')">
-          <mat-icon svgIcon="spain_flag"></mat-icon>
+
+        <button mat-icon-button (click)="useLanguage('es')">
+          <mat-icon svgIcon="es_flag"></mat-icon>
         </button>
       </li>
     </ul>
