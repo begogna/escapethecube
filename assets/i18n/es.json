@@ -1,3 +1,18 @@
 {
-  "ETC_title": "Escápate del cubo"
+	"BOOKING.BOOK": "Reserve y juegue",
+	"BOOKING.EMAIL": "Envíame un correo electrónico respondiendo los siguientes pasos y te confirmaré la disponibilidad\n",
+	"BOOKING.HOW_MANY": "Se recomienda para 2 a 4 personas. Dime cuántas personas van a jugar.",
+	"BOOKING.HOW_MUCH": "De lunes a jueves $ 40 por caja. Viernes a domingo $ 50 por caja. Además de una fianza en caso de mal uso.",
+	"BOOKING.WHEN": "Avísame al menos 3 horas antes de que quieras jugar y haré todo lo posible para encontrar la disponibilidad.",
+	"BOOKING.WHERE": " Yo vengo a ti. Puedo entregar la caja a tu casa. Si se trata de un espacio al aire libre, debes asegurarte de mantener todos los elementos seguros y de que nada salga volando o que tu perro lo muerda.",
+	"CONCEPT": "El concepto",
+	"CREATOR": "La creadora",
+	"ETC_title": "Escápate del cubo",
+	"HOME_DESCRIPTION": "Imagine un cubo, una caja de 25 cm a cada lado con una tapa en la parte superior. En cada lado, tiene diferentes rompecabezas, candados y acertijos, todos conectados para permitirle abrir la caja y poder detener el reloj. Todo está vinculado por una historia y tendrás que conectarlo todo. Puedes tener diferentes acertijos, como construir algo con piezas, abrir una puerta secreta o usar cualquier accesorio para resolver el candado. No te preocupes si estás atascado, porque tienes 3 cartas de ayuda diferentes para cada rompecabezas. ¿Estás listo para el desafío? Si quieres saber más ...",
+	"HOW_MANY": "Cuántos",
+	"HOW_MUCH": "Cuánto cuesta",
+	"IDEA": "De donde vino la idea",
+	"WELCOME": "",
+	"WHEN": "Cuándo",
+	"WHERE": "Dónde"
 }
