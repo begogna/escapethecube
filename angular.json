@@ -108,7 +108,11 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "/escapethecube/",
+            "name": "Escape the cube",
+            "branch": "master"
+          }
         }
       }
     }
