@@ -6,6 +6,7 @@
 	"BOOKING.WHEN": "Avísame al menos 3 horas antes de que quieras jugar y haré todo lo posible para encontrar la disponibilidad.",
 	"BOOKING.WHERE": " Yo vengo a ti. Puedo entregar la caja a tu casa. Si se trata de un espacio al aire libre, debes asegurarte de mantener todos los elementos seguros y de que nada salga volando o que tu perro lo muerda.",
 	"CONCEPT": "El concepto",
+	"CONCEPT_DESCRIPTION": "He diseñado y construido una caja basada en las salas de escape para jugar, resolver diferentes acertijos, pistas, candados ...\n     \n         El objetivo: resolver todo y abrir la caja dentro de una hora de tiempo.\n    \n         Si tienes éxito, tendrás tu recompensa.\n     \n         La caja es para adultos (mayores de 18 años) y se recomienda para 2 a 4 personas.",
 	"CREATOR": "La creadora",
 	"CREATOR_DESCRIPTION": "Soy las manos y la mente del juego.\n\nMe encantan las salas de escape y quería crear algo portátil para disfrutar en casa con tus amigos o familiares.\n\nHe creado la caja con algunos materiales reciclados, cartones, un poco de madera, tijeras y un cortador. Creé las ideas para los rompecabezas y vi algunos videos e ideas en Internet para crear una variación.\n\nEstaba tratando de demostrarme a mí mismo que puedo hacer algo bueno y poder comenzar un nuevo \"negocio\".\n\nAsí que realmente espero que disfrutes el juego y, por supuesto, agradezco todos los comentarios.",
 	"ETC_title": "Escápate del cubo",
@@ -13,7 +14,10 @@
 	"HOW_MANY": "Cuántos",
 	"HOW_MUCH": "Cuánto cuesta",
 	"IDEA": "De donde vino la idea",
+	"REGRET": "No te arrepentirás",
 	"WELCOME": "",
 	"WHEN": "Cuándo",
-	"WHERE": "Dónde"
+	"WHERE": "Dónde",
+	"WHY_DESCRIPTION": "Porque es un gran plan en un día lluvioso en casa, en un día soleado en el\n         parque o en la noche antes de ir al pub / cama. Es una hora de\n         entretenimiento, resolviendo diferentes acertijos y cooperando con su\n         compañeros de equipo (amigos, pareja, familia ...).\n         Porque con mi caja no tienes que preocuparte por la ubicación,\n         donde puedes aparcar el coche o llegar en transporte público porque yo\n         puede entregarlo a su hogar! Puedes pedir unas pizzas y te traeré\n         Eres mi caja para jugar.\n         Porque yo mismo he construido la caja y he puesto mucho esfuerzo y amor\n         y lo apreciaré mucho",
+	"WHY_PLAY": "¿Por qué debería jugar?"
 }

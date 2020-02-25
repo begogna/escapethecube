@@ -11,7 +11,6 @@ import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { OverlayContainer } from '@angular/cdk/overlay';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { EscapeTheCubeAppRoutingModule } from './app-routing.module';
 import { CreatorComponent } from './features/creator/creator.component';
 import { ConceptComponent } from './features/concept/concept.component';
@@ -40,7 +39,6 @@ export function HttpLoaderFactory(http: HttpClient) {
       },
     }),
     BrowserAnimationsModule,
-    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -6,7 +6,7 @@
     </mat-card-header> -->
     <mat-card-content>
       {{ 'BOOKING.EMAIL' | translate }}
-      (ines1691@gmail.com)
+      ({{ email }})
       <mat-list>
         <mat-list-item>{{ 'WHERE' | translate | uppercase }}</mat-list-item>
         <p>
@@ -17,7 +17,7 @@
 
         <mat-list-item>{{ 'WHEN' | translate | uppercase }}</mat-list-item>
         <p>
-          {{ 'BOOKING.WHEN' | translate | uppercase }}
+          {{ 'BOOKING.WHEN' | translate }}
         </p>
         <mat-divider></mat-divider>
         <mat-list-item>{{ 'HOW_MUCH' | translate }}</mat-list-item>
