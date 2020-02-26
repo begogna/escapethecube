@@ -1,16 +1,18 @@
-<div class="home">
-  <mat-card class="home-card">
+<section class="home" fxLayout fxLayoutAlign="center">
+  <mat-card fxLayout="column" fxFlex.xs="100%" fxFlex="400px">
     <mat-card-header>
       <div mat-card-avatar class="header-image"></div>
       <mat-card-title>{{ 'WELCOME' | translate }}</mat-card-title>
       <mat-card-subtitle>{{ 'IDEA' | translate }}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="assets/images/escapethecube_image.png" alt="Escape the cube" />
     <mat-card-content>
-      <p>
-        {{ 'HOME_DESCRIPTION' | translate }}
-      </p>
-      <a routerLink="/booking">{{ 'BOOKING.BOOK' | translate }}</a>
+      <section class="home">
+        <img mat-card-image src="assets/images/escapethecube_image.png" alt="Escape the cube" />
+        <p>
+          {{ 'HOME_DESCRIPTION' | translate }}
+        </p>
+        <a routerLink="/booking">{{ 'BOOKING.BOOK' | translate }}</a>
+      </section>
     </mat-card-content>
   </mat-card>
-</div>
+</section>

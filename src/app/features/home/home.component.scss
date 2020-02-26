@@ -1,15 +1,8 @@
-.home {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px;
-}
-
-.home-card {
-  max-width: 400px;
-}
-
 .header-image {
   background-image: url('/assets/images/escapethecube_logo.png');
   background-size: cover;
+}
+
+.home {
+  margin-top: 10px;
 }
