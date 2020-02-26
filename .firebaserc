@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "escapethecube-fb": {
+      "hosting": {
+        "escapethecube": [
+          "escapethecube-fb"
+        ]
+      }
+    }
+  }
+}

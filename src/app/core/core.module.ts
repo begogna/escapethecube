@@ -5,8 +5,9 @@ import { SharedModule } from '../shared/shared.module';
 import { EscapeTheCubeAppRoutingModule } from '../app-routing.module';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidenavListComponent } from './components/sidenav-list/sidenav-list.component';
+import { FeedbacksComponent } from '../features/feedbacks/feedbacks.component';
 
-const components = [HeaderBarComponent, FooterComponent, SidenavListComponent];
+const components = [HeaderBarComponent, FooterComponent, SidenavListComponent, FeedbacksComponent];
 
 @NgModule({
   imports: [CommonModule, SharedModule, EscapeTheCubeAppRoutingModule],
