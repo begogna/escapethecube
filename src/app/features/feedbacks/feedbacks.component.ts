@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import 'firebase/firestore';
+import { Observable } from 'rxjs';
+import { Feedback } from './Feedback';
 
 @Component({
   selector: 'etc-feedbacks',
@@ -8,14 +10,12 @@ import 'firebase/firestore';
   styleUrls: ['./feedbacks.component.scss'],
 })
 export class FeedbacksComponent implements OnInit {
+  // public feedbacks: Observable<Feedback[]>;
+  public feedbacks: Observable<any>;
+
   constructor(private db: AngularFirestore) {}
 
   ngOnInit(): void {
-    this.db
-      .collection('feedbacks')
-      .valueChanges()
-      .subscribe(result => {
-        console.log(result);
-      });
+    this.feedbacks = this.db.collection('feedbacks').valueChanges();
   }
 }

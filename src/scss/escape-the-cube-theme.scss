@@ -5,7 +5,8 @@
 // Include this only once in your app
 @include mat-core();
 
-$etc-theme-primary: mat-palette($mat-yellow, 700);
+// color, default, lighter, darker
+$etc-theme-primary: mat-palette($mat-yellow, A700, A200, A400);
 $etc-theme-accent: mat-palette($mat-indigo);
 $etc-theme-warn: mat-palette($mat-deep-orange, 300);
 
